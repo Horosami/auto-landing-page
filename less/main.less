@@ -1,0 +1,376 @@
+@main-font: 'Raleway',
+sans-serif;
+@header-font: 'Roboto',
+sans-serif;
+@main-font-size: 16px;
+@color-auto: #ff9900;
+@color-auto-hover-btn: #2e2b28;
+.dropdown {
+    position: relative;
+    z-index: 10001;
+}
+.dropdown-toggle {
+    background-color: @color-auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: @header-font;
+}
+
+h1,
+h2 {
+    font-family: @header-font;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: @header-font;
+    font-size: 20px;
+}
+
+p {
+    font-size: @main-font-size;
+}
+
+hr {
+    width: 80px;
+    border-color: @color-auto;
+    border: 1px solid @color-auto;
+    background-color: @color-auto;
+}
+
+header {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 820px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+header {
+    h1,
+    p {
+        color: white;
+    }
+    h1 {
+        padding-top: 70px;
+    }
+}
+
+.btn {
+    border: 0;
+    outline: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: @color-auto;
+    color: white;
+    transition: background .3s linear;
+}
+
+.btn-primary:hover {
+    background-color: @color-auto-hover-btn;
+    transition: background .3s linear;
+}
+
+nav.navbar.navbar-inverse {
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-inverse .navbar-brand {
+    color: @color-auto;
+    font-weight: 600;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: @color-auto;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border: 0;
+}
+
+
+/*info*/
+
+#info {
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+span.glyphicon {
+    font-size: 48px;
+    color: @color-auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+
+/*advantages*/
+
+#advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/*action*/
+
+#action {
+    text-align: center;
+    background-image: url("../img/action.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+
+/*services*/
+
+#services {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.service-block {
+    position: relative;
+}
+
+.service-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+/*team-block*/
+
+#team {
+    padding: 0;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .left-team,
+    .right-team {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+    }
+    background-color: #eee;
+    .right-team {
+        float: right;
+        padding: 50px;
+    }
+    .left-team {
+        float: left;
+        background-image: url(../img/team.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+    }
+    .doctor:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
+
+/*numbers*/
+
+#numbers {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    background-image: url("../img/numbers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    .number-circle {
+        font-size: 38px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+
+/*maintenance*/
+
+#maintenance {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+table {
+    font-size: 18px;
+    thead {
+        color: @color-auto;
+    }
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border-top: none;
+    border-bottom: none;
+}
+
+
+/*partners*/
+
+#partners {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #0d0d0d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    p.foo-text {
+        color: @color-auto;
+    }
+}
+
+
+/*scroll up*/
+
+div.scrollup {
+    position: fixed;
+    color: black;
+    background-color: @color-auto;
+    right: 20px;
+    bottom: 0px;
+    padding: 4px 10px;
+    font-size: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+div.scrollup:hover {
+    background-color: #000;
+    color: white;
+    transition: all .3s linear;
+}
+
+
+/*color*/
+
+#color-switch {
+    a.btn-Brown,
+    a.btn-RoyalBlue,
+    a.btn-Green,
+    a.btn-Chocolate,
+    a.btn-Orange,
+    a.btn-DarkCyan {
+        transition: all .3s linear;
+    }
+    a.btn-Brown:hover,
+    a.btn-Brown:active,
+    a.btn-Brown:focus {
+        background-color: Brown;
+        color: white;
+        transition: all .3s linear;
+    }
+    a.btn-RoyalBlue:hover,
+    a.btn-RoyalBlue:active,
+    a.btn-RoyalBlue:focus {
+        background-color: RoyalBlue;
+        color: white;
+        transition: all .3s linear;
+    }
+    a.btn-Green:hover,
+    a.btn-Green:active,
+    a.btn-Green:focus {
+        background-color: Green;
+        color: white;
+        transition: all .3s linear;
+    }
+    a.btn-Chocolate:hover,
+    a.btn-Chocolate:active,
+    a.btn-Chocolate:focus {
+        background-color: Chocolate;
+        color: white;
+        transition: all .3s linear;
+    }
+    a.btn-Orange:hover,
+    a.btn-Orange:active,
+    a.btn-Orange:focus {
+        background-color: Orange;
+        color: white;
+        transition: all .3s linear;
+    }
+    a.btn-DarkCyan:hover,
+    a.btn-DarkCyan:active,
+    a.btn-DarkCyan:focus {
+        background-color: DarkCyan;
+        color: white;
+        transition: all .3s linear;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+    .text-centered {
+        text-align: center;
+    }
+    .service-top {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .left-team,
+    .right-team {
+        float: none;
+    }
+    #team .left-team,
+    #team .right-team {
+        width: 100%;
+    }
+}
